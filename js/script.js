@@ -1,19 +1,24 @@
 // **Consegna:**
 // Dato un array contenente una lista di cinque immagini, creare un carosello come nello screenshot allegato.
 const imgs = [
-    "jpg/01.jpg",
-    "jpg/02.jpg",
-    "jpg/03.jpg",
-    "jpg/04.jpg",
-    "jpg/05.jpg"
+    "img/01.jpg",
+    "img/02.jpg",
+    "img/03.jpg",
+    "img/04.jpg",
+    "img/05.jpg"
 ];
 
-
+const item = document.querySelector(".item");
 // **MILESTONE 1**
 // Per prima cosa, creiamo il markup statico: costruiamo il container e inseriamo un'immagine grande al centro: avremo così la struttura base e gli stili pronti per poterci poi concentrare solamente sull'aspetto logico.
 // **MILESTONE 2**
 // Adesso rimuoviamo tutto il markup statico e inseriamo tutte le immagini dinamicamente servendoci dell'array fornito e un semplice ciclo for che concatena un template literal.
-
+for (let i = 0; i < imgs.length; i++) {
+    const thisImg = imgs[i];
+    const element = `<img src="${thisImg}">`;
+    item.innerHTML = element;
+    console.log(thisImg,element);
+}
 // Tutte le immagini saranno nascoste, tranne la prima, che avrà una classe specifica che la renderà visibile.
 // Al termine di questa fase ci ritroveremo con lo stesso slider stilato nella milestone 1, ma costruito dinamicamente attraverso JavaScript.
 // **MILESTONE 3**
