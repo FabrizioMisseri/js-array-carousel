@@ -1,5 +1,13 @@
 // **Consegna:**
 // Dato un array contenente una lista di cinque immagini, creare un carosello come nello screenshot allegato.
+const imgs = [
+    "jpg/01.jpg",
+    "jpg/02.jpg",
+    "jpg/03.jpg",
+    "jpg/04.jpg",
+    "jpg/05.jpg"
+];
+console.log(imgs);
 // **MILESTONE 1**
 // Per prima cosa, creiamo il markup statico: costruiamo il container e inseriamo un'immagine grande al centro: avremo così la struttura base e gli stili pronti per poterci poi concentrare solamente sull'aspetto logico.
 // **MILESTONE 2**
