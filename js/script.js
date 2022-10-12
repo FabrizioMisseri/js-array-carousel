@@ -38,6 +38,10 @@ upBtn.addEventListener ("click", function() {
         sliderPosition++
         items[sliderPosition].classList.add("active");
     }
+    if (sliderPosition === (items.length - 1)) {
+        upBtn.classList.add("hidden");
+    }
+    downBtn.classList.remove("hidden");
 })
 
 downBtn.addEventListener ("click", function() {
@@ -46,4 +50,8 @@ downBtn.addEventListener ("click", function() {
         sliderPosition--
         items[sliderPosition].classList.add("active");
     }
+    if (sliderPosition === 0) {
+        downBtn.classList.add("hidden");
+    }
+    upBtn.classList.remove("hidden");
 })
