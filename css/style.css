@@ -1,4 +1,4 @@
-/* RESET */
+/*  RESET */
 
 *{
     margin: 0;
@@ -10,6 +10,12 @@ html{
     font-size: 100%;
 }
 
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 
 /* COMMON */
 
@@ -17,15 +23,31 @@ html{
     width: 100%;
     height: 100vh;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
 .container{
-    width: 90vw;
-    height: 80vh;
-    border: 3px solid green;
+    width: 90%;
+    height: 85%;
+    display: flex;
+}
+
+.active{
+    display: block;
+}
+
+.hidden{
+    display: none;
+}
+
+
+
+/* MAIN */
+
+main{
+    width: 75%;
+    height: 100%;
     position: relative;
 }
 
@@ -37,13 +59,6 @@ html{
 .item{
     width: 100%;
     height: 100%;
-    display: none;
-}
-
-img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 
 .up-arrow , .down-arrow{
@@ -68,10 +83,29 @@ img{
     bottom: 10px;
 }
 
-.active{
-    display: block;
+
+/* SIDEBAR */
+
+.sidebar{
+    width: 25%;
+    height: 100%;
 }
 
-.hidden{
-    display: none;
+.card{
+    width: 100%;
+    height: 20%;
+    position: relative;
+}
+
+.dark-veil{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.white-border{
+    border: 3px solid white;
 }
