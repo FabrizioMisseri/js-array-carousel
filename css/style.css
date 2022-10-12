@@ -12,3 +12,47 @@ html{
 
 
 /* COMMON */
+
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.item{
+    width: 90vw;
+    height: 85vh;
+    border: 3px solid green;
+    position: relative;
+}
+
+.item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.up-arrow , .down-arrow{
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 1.25rem;
+    background-color: blanchedalmond;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    transform: translate(- 50% , 0);
+}
+
+.up-arrow{
+    top: 10px;
+}
+
+.down-arrow{
+    bottom: 10px;
+}
