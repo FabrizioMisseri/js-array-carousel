@@ -22,14 +22,14 @@ html{
     align-items: center;
 }
 
-.item{
+.container{
     width: 90vw;
     height: 85vh;
     border: 3px solid green;
     position: relative;
 }
 
-.slider{
+.item{
     width: 100%;
     height: 100%;
 }
