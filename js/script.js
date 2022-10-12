@@ -29,3 +29,21 @@ let sliderPosition = 0;
 items[sliderPosition].classList.add("active");
 // **MILESTONE 3**
 // Al click dell'utente sulle frecce, il programma cambierà l’immagine attiva, che quindi verrà visualizzata al posto della precedente.
+const upBtn = document.querySelector(".up-arrow");
+const downBtn = document.querySelector(".down-arrow");
+
+upBtn.addEventListener ("click", function() {
+    if (sliderPosition < (items.length - 1)) {
+        items[sliderPosition].classList.remove("active");
+        sliderPosition++
+        items[sliderPosition].classList.add("active");
+    }
+})
+
+downBtn.addEventListener ("click", function() {
+    if (sliderPosition > 0) {
+        items[sliderPosition].classList.remove("active");
+        sliderPosition--
+        items[sliderPosition].classList.add("active");
+    }
+})
