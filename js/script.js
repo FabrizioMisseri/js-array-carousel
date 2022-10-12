@@ -47,15 +47,23 @@ upBtn.addEventListener("click", function() {
         darkVeil[itemSelector].classList.add("hidden");
         card[itemSelector].classList.add("white-border");
 
-        downBtn.classList.remove("hidden");
-    }
-    if (itemSelector == (items.length - 1)) {
-        upBtn.classList.add("hidden");
+    } else {
+        
+        items[itemSelector].classList.add("hidden");
+        darkVeil[itemSelector].classList.remove("hidden");
+        card[itemSelector].classList.remove("white-border");
+        
+        itemSelector = 0
+
+        items[itemSelector].classList.remove("hidden");
+        darkVeil[itemSelector].classList.add("hidden");
+        card[itemSelector].classList.add("white-border");
     }
 })
 
 downBtn.addEventListener("click", function() {
     if (itemSelector > 0) {
+
         items[itemSelector].classList.add("hidden");
         darkVeil[itemSelector].classList.remove("hidden");
         card[itemSelector].classList.remove("white-border");
@@ -66,9 +74,16 @@ downBtn.addEventListener("click", function() {
         darkVeil[itemSelector].classList.add("hidden");
         card[itemSelector].classList.add("white-border");
 
-        upBtn.classList.remove("hidden");
-    }
-    if (itemSelector === 0) {
-        downBtn.classList.add("hidden");
+    } else {
+
+        items[itemSelector].classList.add("hidden");
+        darkVeil[itemSelector].classList.remove("hidden");
+        card[itemSelector].classList.remove("white-border");
+
+        itemSelector = (items.length - 1);
+        
+        items[itemSelector].classList.remove("hidden");
+        darkVeil[itemSelector].classList.add("hidden");
+        card[itemSelector].classList.add("white-border");
     }
 })
