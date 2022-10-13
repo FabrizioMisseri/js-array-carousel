@@ -48,7 +48,6 @@ img{
 main{
     width: 75%;
     height: 100%;
-    position: relative;
 }
 
 .item-container{
@@ -72,7 +71,7 @@ main{
     cursor: pointer;
     position: absolute;
     left: 50%;
-    transform: translate(- 50% , 0);
+    transform: translate(-50% , 0);
 }
 
 .up-arrow{
@@ -89,6 +88,7 @@ main{
 .sidebar{
     width: 25%;
     height: 100%;
+    position: relative;
 }
 
 .card{

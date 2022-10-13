@@ -36,7 +36,7 @@ const upBtn = document.querySelector(".up-arrow");
 const downBtn = document.querySelector(".down-arrow");
 
 //bottono sopra
-upBtn.addEventListener("click", function() {
+downBtn.addEventListener("click", function() {
 
     items[itemSelector].classList.add("hidden");
     darkVeil[itemSelector].classList.remove("hidden");
@@ -60,7 +60,7 @@ upBtn.addEventListener("click", function() {
 
 
 //bottone sotto
-downBtn.addEventListener("click", function() {
+upBtn.addEventListener("click", function() {
     
     items[itemSelector].classList.add("hidden");
     darkVeil[itemSelector].classList.remove("hidden");
