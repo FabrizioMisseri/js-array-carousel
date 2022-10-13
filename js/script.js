@@ -35,7 +35,7 @@ card[itemSelector].classList.add("white-border");
 const upBtn = document.querySelector(".up-arrow");
 const downBtn = document.querySelector(".down-arrow");
 
-//bottono sopra
+//buttone sotto
 downBtn.addEventListener("click", function() {
 
     items[itemSelector].classList.add("hidden");
@@ -59,7 +59,7 @@ downBtn.addEventListener("click", function() {
 })
 
 
-//bottone sotto
+//buttone sopra
 upBtn.addEventListener("click", function() {
     
     items[itemSelector].classList.add("hidden");
