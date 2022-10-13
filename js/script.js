@@ -35,55 +35,49 @@ card[itemSelector].classList.add("white-border");
 const upBtn = document.querySelector(".up-arrow");
 const downBtn = document.querySelector(".down-arrow");
 
+//bottono sopra
 upBtn.addEventListener("click", function() {
-    if (itemSelector < (items.length - 1)) {
-        items[itemSelector].classList.add("hidden");
-        darkVeil[itemSelector].classList.remove("hidden");
-        card[itemSelector].classList.remove("white-border");
 
+    items[itemSelector].classList.add("hidden");
+    darkVeil[itemSelector].classList.remove("hidden");
+    card[itemSelector].classList.remove("white-border");
+
+    if (itemSelector < (items.length - 1)) {
+        
         itemSelector++
 
-        items[itemSelector].classList.remove("hidden");
-        darkVeil[itemSelector].classList.add("hidden");
-        card[itemSelector].classList.add("white-border");
-
     } else {
-        
-        items[itemSelector].classList.add("hidden");
-        darkVeil[itemSelector].classList.remove("hidden");
-        card[itemSelector].classList.remove("white-border");
         
         itemSelector = 0
-
-        items[itemSelector].classList.remove("hidden");
-        darkVeil[itemSelector].classList.add("hidden");
-        card[itemSelector].classList.add("white-border");
+    
     }
+
+    items[itemSelector].classList.remove("hidden");
+    darkVeil[itemSelector].classList.add("hidden");
+    card[itemSelector].classList.add("white-border");
+
 })
 
+
+//bottone sotto
 downBtn.addEventListener("click", function() {
+    
+    items[itemSelector].classList.add("hidden");
+    darkVeil[itemSelector].classList.remove("hidden");
+    card[itemSelector].classList.remove("white-border");
+
     if (itemSelector > 0) {
-
-        items[itemSelector].classList.add("hidden");
-        darkVeil[itemSelector].classList.remove("hidden");
-        card[itemSelector].classList.remove("white-border");
-
+        
         itemSelector--
-
-        items[itemSelector].classList.remove("hidden");
-        darkVeil[itemSelector].classList.add("hidden");
-        card[itemSelector].classList.add("white-border");
-
+    
     } else {
 
-        items[itemSelector].classList.add("hidden");
-        darkVeil[itemSelector].classList.remove("hidden");
-        card[itemSelector].classList.remove("white-border");
-
         itemSelector = (items.length - 1);
-        
-        items[itemSelector].classList.remove("hidden");
-        darkVeil[itemSelector].classList.add("hidden");
-        card[itemSelector].classList.add("white-border");
+
     }
+
+    items[itemSelector].classList.remove("hidden");
+    darkVeil[itemSelector].classList.add("hidden");
+    card[itemSelector].classList.add("white-border");
+
 })
